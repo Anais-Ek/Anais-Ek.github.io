@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>ANAIS ELISABETH WEBSITE</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+   <link rel="shortcut icon" href="/images/testicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Accueil</a></li>
+            <li><a class="smoothscroll" href="#isn">Piggy Bank </a></li>
+            <li><a class="smoothscroll" href="#contact">Contactez-moi !</a></li>
+            
+         </ul> <!-- end #nav <li><a  href="demo.html">DEMO</a></li>  -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Anais Elisabeth</h1>
+            <h3>Passionnée d'informatique et de Webdesign</h3>
+            <hr />
+            <ul class="social">
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#isn"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <section id="isn" style="padding: 90px 0 72px; background: #fff;" >
+
+
+         <div class="row add-bottom">
+   
+            <div class="twelve columns">
+   
+               <h1>PIGGY BANK </h1>
+   
+               <p class="lead add-bottom">
+                  Durant la dernière année de lycée, nous avons eu l’occasion en cours d’Informatique et Sciences du Numérique d’entreprendre un projet de groupe. 
+                  Nous avons alors choisi de réaliser une machine capable de trier et de compter les pièces de 1c, 2c et 5c et dont le total est à la fin affichée sur un écran. 
+                  Nous avons nommé ce projet <strong>Piggy Bank</strong>.
+               </p>
+      
+            </div>
+   
+         </div> <!-- Row End-->
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns">
+
+               <p><a href="#"><img width="500" height="800" class="pull-left" alt="sample-image" src="images/isn/1.png"></a></p>
+
+               <p class="lead add-bottom">
+                  Cette idée nous est venue grâce à une vidéo montrant la fabrication d’une maquette en carton capable de trier les pièces sans utiliser l’informatique. 
+                  Nous voulions alors réaliser un projet similaire et amélioré, nous permettant d’inclure nos connaissances acquises en cours d’Informatique et de Science du Numérique.
+               </p>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns">
+
+               <p class="lead add-bottom">
+                  La base de notre machine est en bois, mais les petits détails tels que la roue ou les tiroirs sont en carton. 
+                  Pour ce qui est de l’électronique, nous avons utilisées une carte ARDUINO UNO, une plaquette d’essai, des fils de connexion ainsi 
+                  qu’un écran LCD 16x2 avec son module I2C qui affichera le total. Nous avons aussi opté pour détecter le passage des pièces, des capteurs infrarouges. 
+                  Et pour la roue, un mini moteur à courant continu réguler par le pilote du moteur ce qui nous permettra de la faire tourner lentement.
+                  Pour réaliser ce projet, nous avons alors dû en apprendre davantage sur le langage de programmation Arduino. 
+                  Pour ce faire, nous avons utilisé le livre de Christian Tavernier nommeer Arduino, Maîtrisez sa programmation et ses cartes d’interface (shields).
+               </p>
+
+            </div>
+
+         </div> <!-- Row End-->
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns">
+
+               <p><a href="#"><img width="200" height="500" class="pull-left" alt="sample-image" src="images/isn/3.png"></a></p>
+
+               <p class="lead add-bottom">
+                  Nous avons choisi les capteurs de proximité munis de deux leds infrarouges. La transparente correspond à la led émettrice et 
+                  la plus foncée correspond à la led réceptrice. Lorsqu’un corps quelconque passe devant le faisceau il le renvoi alors à la diode réceptrice et 
+                  détecte ainsi le corps à proximité.
+                  Ces capteurs sont les plus adaptés pour notre projet étant donné qu’ils sont placés dans les différentes colonnes de sortie de la trieuse, 
+                  afin de détecter les pièces qui sont petites et fines, pour ensuite envoyer la valeur de sortie élevée à l’Arduino qui peut être lu 
+                  par les broches analogiques de la carte.   
+
+            </div>
+
+         </div> <!-- Row End-->
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns">
+
+
+               <p class="lead add-bottom">
+                  Nous avons ensuite réalisé le montage Arduino à partir de la modélisation sketchup :  
+               </p>   
+
+               <p><a href="#"><img width="950" height="500" class="pull-left" alt="sample-image" src="images/isn/7.png"></a></p>
+
+
+            </div>
+
+         </div> <!-- Row End-->
+
+         <div class="row add-bottom">
+
+            <div class="twelve columns">
+
+
+               <p class="lead add-bottom">
+                  Et voici le montage final :  
+               </p>   
+
+               <p><a href="#"><img width="950" height="500" class="pull-left" alt="sample-image" src="images/isn/8.jpg"></a></p>
+
+
+            </div>
+
+         </div> <!-- Row End-->
+
+
+
+
+
+
+   </section>
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">J'espère que mon profil vous a plu ! Si vous avez des questions complémentaires, vous pouvez 
+                     me contacter par mail (anaisk.elisabeth@gmail.com) ou par téléphone (0651941703). 
+                  </p>
+                  <div class="columns download">
+                     <p>
+                        <a href="images/CV.pdf" class="button">Mon CV en PDF</a>
+                     </p>
+                  </div>
+
+            </div>
+
+         </div>
+
+
+      </div>
+
+   </section> <!-- Contact Section End test-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+
+
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank"></a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
